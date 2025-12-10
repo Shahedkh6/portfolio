@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Portfolio | Project Builder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <a href="#" class="logo">Eng.<span class="highlight">Portfolio</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#volunteering">Volunteering</a></li>
+                <li><a href="#contact" class="btn-primary">Contact Me</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero-section">
+        <div class="container hero-content">
+            <p class="subtitle">Hello, I am</p>
+            <h1 class="animate-text">Engineering Student & <br><span class="highlight">Project Builder</span></h1>
+            <p class="tagline">Bridging the gap between creativity and practicality. I design solutions, build robots, and engineer efficient systems.</p>
+            <div class="cta-group">
+                <a href="#projects" class="btn-primary">View Projects</a>
+                <a href="#contact" class="btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+        <div class="hero-shape"></div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text fade-in">
+                    <p>I am a hands-on Engineering Student passionate about technical innovation. Whether it's coding a new interface or soldering a circuit board, I love the process of turning abstract problems into tangible solutions.</p>
+                    <p>My focus is on efficiency, user-centric design, and reliable engineering mechanics.</p>
+                </div>
+                <div class="skills-container fade-in">
+                    <h3>Technical Skills</h3>
+                    <div class="badges">
+                        <span class="badge"><i class="fas fa-microchip"></i> Arduino</span>
+                        <span class="badge"><i class="fas fa-cogs"></i> Engineering Design</span>
+                        <span class="badge"><i class="fas fa-code"></i> HTML/CSS/JS</span>
+                        <span class="badge"><i class="fas fa-project-diagram"></i> Project Management</span>
+                        <span class="badge"><i class="fas fa-users"></i> Teamwork</span>
+                        <span class="badge"><i class="fas fa-lightbulb"></i> Problem Solving</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="grid-3">
+                
+                <article class="card fade-in">
+                    <div class="card-image">
+                        <i class="fas fa-robot card-icon"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>STEM Line Follower Robot</h3>
+                        <p>Designed and programmed a robot capable of autonomous navigation along a complex path using IR sensors and microcontroller logic.</p>
+                        <div class="tags">
+                            <span>C++</span>
+                            <span>Circuits</span>
+                            <span>Robotics</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card fade-in">
+                    <div class="card-image">
+                        <i class="fas fa-filter card-icon"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Eggshell Filtration System</h3>
+                        <p>A research-based initiative utilizing calcium carbonate from eggshells to filter heavy metals from industrial wastewater.</p>
+                        <div class="tags">
+                            <span>Research</span>
+                            <span>Sustainability</span>
+                            <span>Mgmt</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card fade-in">
+                    <div class="card-image">
+                        <i class="fas fa-pills card-icon"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Automated Pill Dispenser</h3>
+                        <p>Engineering Design Course project. Created a mechanical prototype to dispense medication at scheduled intervals for elderly care.</p>
+                        <div class="tags">
+                            <span>CAD Design</span>
+                            <span>Prototyping</span>
+                            <span>Healthcare</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="volunteering" class="section">
+        <div class="container">
+            <h2 class="section-title">Volunteering & Experience</h2>
+            <div class="vol-grid">
+                
+                <div class="vol-card fade-in">
+                    <div class="vol-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="vol-info">
+                        <h3>HTU Career Day Volunteer</h3>
+                        <p>Assisted in organizing logistics and guiding attendees, ensuring smooth operations for over 500 visitors and 30 companies.</p>
+                    </div>
+                </div>
+
+                <div class="vol-card fade-in">
+                    <div class="vol-icon"><i class="fas fa-bolt"></i></div>
+                    <div class="vol-info">
+                        <h3>AEE Club Participation</h3>
+                        <p>Active member of the Association of Energy Engineers (HTU Chapter). Participated in field visits to power plants and renewable energy workshops.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-dark">
+        <div class="container contact-container">
+            <h2 class="section-title text-white">Let's Work Together</h2>
+            <p class="contact-subtitle">Have a project in mind or want to discuss engineering?</p>
+            
+            <form class="contact-form fade-in">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn-primary full-width">Send Message</button>
+            </form>
+
+            <div class="social-links">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Engineering Portfolio. Designed & Built with Code.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
