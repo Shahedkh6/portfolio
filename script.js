@@ -1,37 +1,30 @@
-// 1. Set Copyright Year Automatically
+// 1. Footer Year
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// 2. Mobile Navigation Toggle logic
+// 2. Mobile Menu
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 
-if (hamburger) {
+if(hamburger){
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('active');
     });
 }
 
-// Close mobile menu when a link is clicked
+// Close menu on link click
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
         navLinks.classList.remove('active');
     });
 });
 
-// 3. Scroll Reveal Animation
-const observerOptions = {
-    threshold: 0.2 // Trigger when 20% of element is visible
-};
-
+// 3. Scroll Animation
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
         }
     });
-}, observerOptions);
+}, { threshold: 0.1 });
 
-// Observe all elements with class 'fade-in'
-document.querySelectorAll('.fade-in').forEach(el => {
-    observer.observe(el);
-});
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
